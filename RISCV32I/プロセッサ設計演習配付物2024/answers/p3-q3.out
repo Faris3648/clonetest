@@ -1,0 +1,389 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x55e292deb970 .scope module, "top" "top" 2 21;
+ .timescale -9 -9;
+v0x55e292e0ddf0_0 .net/s "imm", 31 0, L_0x55e292e0dfb0;  1 drivers
+v0x55e292e0dee0_0 .var "inst", 31 0;
+E_0x55e292dae400 .event edge, v0x55e292e0dcb0_0;
+S_0x55e292debb00 .scope function.vec4.s1, "check" "check" 2 60, 2 60 0, S_0x55e292deb970;
+ .timescale -9 -9;
+; Variable check is vec4 return value of scope S_0x55e292debb00
+v0x55e292e0d430_0 .var "imm", 31 0;
+v0x55e292e0d510_0 .var "inst", 31 0;
+TD_top.check ;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 7, 0, 2;
+    %dup/vec4;
+    %pushi/vec4 3, 0, 7;
+    %cmp/u;
+    %jmp/1 T_0.0, 6;
+    %dup/vec4;
+    %pushi/vec4 19, 0, 7;
+    %cmp/u;
+    %jmp/1 T_0.1, 6;
+    %dup/vec4;
+    %pushi/vec4 35, 0, 7;
+    %cmp/u;
+    %jmp/1 T_0.2, 6;
+    %dup/vec4;
+    %pushi/vec4 99, 0, 7;
+    %cmp/u;
+    %jmp/1 T_0.3, 6;
+    %dup/vec4;
+    %pushi/vec4 23, 0, 7;
+    %cmp/u;
+    %jmp/1 T_0.4, 6;
+    %dup/vec4;
+    %pushi/vec4 55, 0, 7;
+    %cmp/u;
+    %jmp/1 T_0.5, 6;
+    %dup/vec4;
+    %pushi/vec4 103, 0, 7;
+    %cmp/u;
+    %jmp/1 T_0.6, 6;
+    %dup/vec4;
+    %pushi/vec4 111, 0, 7;
+    %cmp/u;
+    %jmp/1 T_0.7, 6;
+    %pushi/vec4 0, 0, 32;
+    %load/vec4 v0x55e292e0d430_0;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %ret/vec4 0, 0, 1;  Assign to check (store_vec4_to_lval)
+    %jmp T_0.9;
+T_0.0 ;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 1, 31, 6;
+    %replicate 20;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 12, 20, 6;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0d430_0;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %ret/vec4 0, 0, 1;  Assign to check (store_vec4_to_lval)
+    %jmp T_0.9;
+T_0.1 ;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 1, 31, 6;
+    %replicate 20;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 12, 20, 6;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0d430_0;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %ret/vec4 0, 0, 1;  Assign to check (store_vec4_to_lval)
+    %jmp T_0.9;
+T_0.2 ;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 1, 31, 6;
+    %replicate 20;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 7, 25, 6;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 5, 7, 4;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0d430_0;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %ret/vec4 0, 0, 1;  Assign to check (store_vec4_to_lval)
+    %jmp T_0.9;
+T_0.3 ;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 1, 31, 6;
+    %replicate 20;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 1, 7, 4;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 6, 25, 6;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 4, 8, 5;
+    %concat/vec4; draw_concat_vec4
+    %concati/vec4 0, 0, 1;
+    %load/vec4 v0x55e292e0d430_0;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %ret/vec4 0, 0, 1;  Assign to check (store_vec4_to_lval)
+    %jmp T_0.9;
+T_0.4 ;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 20, 12, 5;
+    %concati/vec4 0, 0, 12;
+    %load/vec4 v0x55e292e0d430_0;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %ret/vec4 0, 0, 1;  Assign to check (store_vec4_to_lval)
+    %jmp T_0.9;
+T_0.5 ;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 20, 12, 5;
+    %concati/vec4 0, 0, 12;
+    %load/vec4 v0x55e292e0d430_0;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %ret/vec4 0, 0, 1;  Assign to check (store_vec4_to_lval)
+    %jmp T_0.9;
+T_0.6 ;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 1, 31, 6;
+    %replicate 20;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 12, 20, 6;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0d430_0;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %ret/vec4 0, 0, 1;  Assign to check (store_vec4_to_lval)
+    %jmp T_0.9;
+T_0.7 ;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 1, 31, 6;
+    %replicate 20;
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 8, 12, 5;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 1, 20, 6;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0d510_0;
+    %parti/s 10, 21, 6;
+    %concat/vec4; draw_concat_vec4
+    %concati/vec4 0, 0, 1;
+    %load/vec4 v0x55e292e0d430_0;
+    %pad/u 40;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %ret/vec4 0, 0, 1;  Assign to check (store_vec4_to_lval)
+    %jmp T_0.9;
+T_0.9 ;
+    %pop/vec4 1;
+    %end;
+S_0x55e292e0d5d0 .scope module, "i_immgen" "immgen" 2 24, 3 16 0, S_0x55e292deb970;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 32 "inst";
+    .port_info 1 /OUTPUT 32 "imm";
+v0x55e292e0dbb0_0 .net "imm", 31 0, L_0x55e292e0dfb0;  alias, 1 drivers
+v0x55e292e0dcb0_0 .net "inst", 31 0, v0x55e292e0dee0_0;  1 drivers
+L_0x55e292e0dfb0 .ufunc/vec4 TD_top.i_immgen.f_immgen, 32, v0x55e292e0dee0_0 (v0x55e292e0dad0_0) S_0x55e292e0d7d0;
+S_0x55e292e0d7d0 .scope function.vec4.s32, "f_immgen" "f_immgen" 3 20, 3 20 0, S_0x55e292e0d5d0;
+ .timescale -9 -9;
+; Variable f_immgen is vec4 return value of scope S_0x55e292e0d7d0
+v0x55e292e0dad0_0 .var "inst", 31 0;
+TD_top.i_immgen.f_immgen ;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 7, 0, 2;
+    %dup/vec4;
+    %pushi/vec4 3, 0, 7;
+    %cmp/u;
+    %jmp/1 T_1.10, 6;
+    %dup/vec4;
+    %pushi/vec4 19, 0, 7;
+    %cmp/u;
+    %jmp/1 T_1.11, 6;
+    %dup/vec4;
+    %pushi/vec4 35, 0, 7;
+    %cmp/u;
+    %jmp/1 T_1.12, 6;
+    %dup/vec4;
+    %pushi/vec4 99, 0, 7;
+    %cmp/u;
+    %jmp/1 T_1.13, 6;
+    %dup/vec4;
+    %pushi/vec4 23, 0, 7;
+    %cmp/u;
+    %jmp/1 T_1.14, 6;
+    %dup/vec4;
+    %pushi/vec4 55, 0, 7;
+    %cmp/u;
+    %jmp/1 T_1.15, 6;
+    %dup/vec4;
+    %pushi/vec4 103, 0, 7;
+    %cmp/u;
+    %jmp/1 T_1.16, 6;
+    %dup/vec4;
+    %pushi/vec4 111, 0, 7;
+    %cmp/u;
+    %jmp/1 T_1.17, 6;
+    %pushi/vec4 0, 0, 32;
+    %ret/vec4 0, 0, 32;  Assign to f_immgen (store_vec4_to_lval)
+    %jmp T_1.19;
+T_1.10 ;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 1, 31, 6;
+    %replicate 20;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 12, 20, 6;
+    %concat/vec4; draw_concat_vec4
+    %ret/vec4 0, 0, 32;  Assign to f_immgen (store_vec4_to_lval)
+    %jmp T_1.19;
+T_1.11 ;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 1, 31, 6;
+    %replicate 20;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 12, 20, 6;
+    %concat/vec4; draw_concat_vec4
+    %ret/vec4 0, 0, 32;  Assign to f_immgen (store_vec4_to_lval)
+    %jmp T_1.19;
+T_1.12 ;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 1, 31, 6;
+    %replicate 20;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 7, 25, 6;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 5, 7, 4;
+    %concat/vec4; draw_concat_vec4
+    %ret/vec4 0, 0, 32;  Assign to f_immgen (store_vec4_to_lval)
+    %jmp T_1.19;
+T_1.13 ;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 1, 31, 6;
+    %replicate 20;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 1, 7, 4;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 6, 25, 6;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 4, 8, 5;
+    %concat/vec4; draw_concat_vec4
+    %concati/vec4 0, 0, 1;
+    %ret/vec4 0, 0, 32;  Assign to f_immgen (store_vec4_to_lval)
+    %jmp T_1.19;
+T_1.14 ;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 20, 12, 5;
+    %concati/vec4 0, 0, 12;
+    %ret/vec4 0, 0, 32;  Assign to f_immgen (store_vec4_to_lval)
+    %jmp T_1.19;
+T_1.15 ;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 20, 12, 5;
+    %concati/vec4 0, 0, 12;
+    %ret/vec4 0, 0, 32;  Assign to f_immgen (store_vec4_to_lval)
+    %jmp T_1.19;
+T_1.16 ;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 1, 31, 6;
+    %replicate 20;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 12, 20, 6;
+    %concat/vec4; draw_concat_vec4
+    %ret/vec4 0, 0, 32;  Assign to f_immgen (store_vec4_to_lval)
+    %jmp T_1.19;
+T_1.17 ;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 1, 31, 6;
+    %replicate 20;
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 8, 12, 5;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 1, 20, 6;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v0x55e292e0dad0_0;
+    %parti/s 10, 21, 6;
+    %concat/vec4; draw_concat_vec4
+    %concati/vec4 0, 0, 1;
+    %pad/u 32;
+    %ret/vec4 0, 0, 32;  Assign to f_immgen (store_vec4_to_lval)
+    %jmp T_1.19;
+T_1.19 ;
+    %pop/vec4 1;
+    %end;
+    .scope S_0x55e292deb970;
+T_2 ;
+    %wait E_0x55e292dae400;
+    %delay 5, 0;
+    %load/vec4 v0x55e292e0dee0_0;
+    %load/vec4 v0x55e292e0ddf0_0;
+    %store/vec4 v0x55e292e0d430_0, 0, 32;
+    %store/vec4 v0x55e292e0d510_0, 0, 32;
+    %callf/vec4 TD_top.check, S_0x55e292debb00;
+    %flag_set/vec4 8;
+    %jmp/0 T_2.0, 8;
+    %pushi/vec4 1130915171, 0, 32; draw_string_vec4
+    %pushi/vec4 1797279841, 0, 32; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %pushi/vec4 1936942436, 0, 32; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %pushi/vec4 33, 0, 8; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %jmp/1 T_2.1, 8;
+T_2.0 ; End of true expr.
+    %pushi/vec4 1130915171, 0, 32; draw_string_vec4
+    %pushi/vec4 1797277281, 0, 32; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %pushi/vec4 1768711524, 0, 32; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %pushi/vec4 33, 0, 8; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %jmp/0 T_2.1, 8;
+ ; End of false expr.
+    %blend;
+T_2.1;
+    %vpi_call 2 28 "$display", "inst=%h(%b) imm=%h(%d) %s", v0x55e292e0dee0_0, v0x55e292e0dee0_0, v0x55e292e0ddf0_0, v0x55e292e0ddf0_0, S<0,vec4,u104> {1 0 0};
+    %jmp T_2;
+    .thread T_2, $push;
+    .scope S_0x55e292deb970;
+T_3 ;
+    %delay 0, 0;
+    %pushi/vec4 0, 0, 32;
+    %assign/vec4 v0x55e292e0dee0_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 4160815379, 0, 32;
+    %assign/vec4 v0x55e292e0dee0_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 134414647, 0, 32;
+    %assign/vec4 v0x55e292e0dee0_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 16777455, 0, 32;
+    %assign/vec4 v0x55e292e0dee0_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 101789219, 0, 32;
+    %assign/vec4 v0x55e292e0dee0_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 25667459, 0, 32;
+    %assign/vec4 v0x55e292e0dee0_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 4244906019, 0, 32;
+    %assign/vec4 v0x55e292e0dee0_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 357009299, 0, 32;
+    %assign/vec4 v0x55e292e0dee0_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 32871, 0, 32;
+    %assign/vec4 v0x55e292e0dee0_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 16194147, 0, 32;
+    %assign/vec4 v0x55e292e0dee0_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 3538409699, 0, 32;
+    %assign/vec4 v0x55e292e0dee0_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 15173555, 0, 32;
+    %assign/vec4 v0x55e292e0dee0_0, 0;
+    %delay 10, 0;
+    %vpi_call 2 57 "$finish" {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "./../p3/q3.v";
+    "p3-q3.v";

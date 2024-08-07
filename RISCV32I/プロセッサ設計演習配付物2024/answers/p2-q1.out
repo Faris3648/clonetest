@@ -1,0 +1,84 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x55c7b1972d90 .scope module, "top" "top" 2 20;
+ .timescale -9 -9;
+v0x55c7b1985b40_0 .var "in", 31 0;
+v0x55c7b1985c30_0 .net "out", 31 0, L_0x55c7b1995d70;  1 drivers
+E_0x55c7b193a400 .event edge, v0x55c7b1985a20_0, v0x55c7b1985940_0;
+S_0x55c7b1972f40 .scope module, "i_plus4" "plus4" 2 23, 2 14 0, S_0x55c7b1972d90;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 32 "in";
+    .port_info 1 /OUTPUT 32 "out";
+L_0x7fddd05d5018 .functor BUFT 1, C4<00000000000000000000000000000100>, C4<0>, C4<0>, C4<0>;
+v0x55c7b1939cf0_0 .net/2u *"_ivl_0", 31 0, L_0x7fddd05d5018;  1 drivers
+v0x55c7b1985940_0 .net "in", 31 0, v0x55c7b1985b40_0;  1 drivers
+v0x55c7b1985a20_0 .net "out", 31 0, L_0x55c7b1995d70;  alias, 1 drivers
+L_0x55c7b1995d70 .arith/sum 32, v0x55c7b1985b40_0, L_0x7fddd05d5018;
+    .scope S_0x55c7b1972d90;
+T_0 ;
+    %wait E_0x55c7b193a400;
+    %load/vec4 v0x55c7b1985b40_0;
+    %addi 4, 0, 32;
+    %load/vec4 v0x55c7b1985c30_0;
+    %cmp/e;
+    %flag_mov 8, 4;
+    %jmp/0 T_0.0, 8;
+    %pushi/vec4 1130915171, 0, 32; draw_string_vec4
+    %pushi/vec4 1797279841, 0, 32; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %pushi/vec4 1936942436, 0, 32; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %pushi/vec4 33, 0, 8; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %jmp/1 T_0.1, 8;
+T_0.0 ; End of true expr.
+    %pushi/vec4 1130915171, 0, 32; draw_string_vec4
+    %pushi/vec4 1797277281, 0, 32; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %pushi/vec4 1768711524, 0, 32; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %pushi/vec4 33, 0, 8; draw_string_vec4
+    %concat/vec4; draw_string_vec4
+    %jmp/0 T_0.1, 8;
+ ; End of false expr.
+    %blend;
+T_0.1;
+    %vpi_call 2 26 "$display", "in=%10d out=%10d %s", v0x55c7b1985b40_0, v0x55c7b1985c30_0, S<0,vec4,u104> {1 0 0};
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0x55c7b1972d90;
+T_1 ;
+    %delay 0, 0;
+    %pushi/vec4 0, 0, 32;
+    %assign/vec4 v0x55c7b1985b40_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 10, 0, 32;
+    %assign/vec4 v0x55c7b1985b40_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 50, 0, 32;
+    %assign/vec4 v0x55c7b1985b40_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 132, 0, 32;
+    %assign/vec4 v0x55c7b1985b40_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 892734, 0, 32;
+    %assign/vec4 v0x55c7b1985b40_0, 0;
+    %delay 10, 0;
+    %pushi/vec4 192908, 0, 32;
+    %assign/vec4 v0x55c7b1985b40_0, 0;
+    %delay 10, 0;
+    %vpi_call 2 43 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "p2-q1.v";
